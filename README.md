@@ -1,4 +1,7 @@
 # python-for-coding-test
 
-## BAEKJOON 문제를 단계별로 풀고있는 중이다.
-* 2차원 배열을 도전중이다.
+## :yellow_heart: BAEKJOON 문제 풀이.
+* 매일 한문제씩 꼭 도전 중
+
+## :yellow_heart: Programmers 입문 문제 풀이.
+* 매일 한문제씩 꼭 도전 중
