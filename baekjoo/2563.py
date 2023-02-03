@@ -12,3 +12,4 @@ result = 0
 for i in array:
   result += sum(i)
 print(result)
+# 영역을 합해준다
