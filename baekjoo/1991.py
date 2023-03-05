@@ -32,7 +32,7 @@ def preorder(node): # 전위 순회
   # if문을 두개 걸어줘서 재귀를 다하고 다은거를 재귀를 해준다.
   if node.left != '.':
     preorder(tree[node.left]) # 왼쪽이 있다면 왼쪽
-  if node.right != '.':
+  if node.right != '.': # 재귀가 이루어지게 된다.
     preorder(tree[node.right]) # 오른쪽이 있다면 오른쪽
 
 def inorder(node): # 중위 순회
