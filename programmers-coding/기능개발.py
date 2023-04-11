@@ -20,7 +20,7 @@ def solution(progresses, speeds):
         if len(result1) == 0:
             result1.append(a)
         else:
-            if result1[0] <= a:
+            if result1[0] < a:
                 result1.popleft()
                 result1.append(a)
                 answer.append(cnt1)
@@ -29,3 +29,6 @@ def solution(progresses, speeds):
                 cnt1 += 1
     answer.append(cnt1)
     return answer
+
+# 현재 11번 문제에서 막히는 현상이 생기고 있다. 
+# 좋은 방법으로 문제를 푸는 방법도 있지만, 현재 이 방법을 사용해서 문제를 풀 수 없는지 계속해서 문제를 푸는 중이다.
