@@ -2,7 +2,14 @@ def find_parent(parent, x):
     if parent[x] != x:
         return find_parent(parent, parent[x])
     return x
-
+"""
+아래와 같은 함수로 변경하여 경로 압축(Path Compressiont)기법을
+적요하면 시간 복잡도를 개선시킬 수 있다.
+def find_parent(parent, x):
+    if parent[x] != x:
+        parent[x] = find_parent(parent, parent[x])
+    return parent[x]
+"""
 def union_parent(parent, a, b):
     a = find_parent(parent, a)
     b = find_parent(parent, b)
