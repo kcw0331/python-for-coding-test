@@ -12,3 +12,14 @@ print(indegree)
 print(graph)
 # ex) indegree => [0, 0, 1, 1, 2, 1, 2, 1]
 # ex) graph => [[], [2, 5], [3, 6], [4], [7], [6], [4], []]
+
+# 위상 정렬 함수
+def topology_sort():
+    result = []
+    q = deque()
+
+    for i in range(1, v + 1):
+        if indegree[i] == 0:
+            q.append(i)
+
+    
