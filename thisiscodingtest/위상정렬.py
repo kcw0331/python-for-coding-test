@@ -22,4 +22,16 @@ def topology_sort():
         if indegree[i] == 0:
             q.append(i)
 
-    
+# 큐 빌 때까지 반복
+while q:
+    now = q.popleft()
+    result.append(now)
+    for i in graph[now]:
+        indegree[i] -= 1
+        if indegree[i] == 0:
+            q.append(i)
+
+for i in result:
+    print(i, end=' ')
+
+topology_sort()
