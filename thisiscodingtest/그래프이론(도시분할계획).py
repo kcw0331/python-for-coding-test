@@ -35,7 +35,7 @@ for _ in range(m):
     edges.append((cost, a, b))
 
 edges.sort()
-last = 0
+last = 0 # 최소 신장 트리에 포함되는 간선 중에서 가장 비용이 큰 간선
 
 for edge in edges:
     cost, a, b = edge
@@ -43,4 +43,7 @@ for edge in edges:
         union_parent(parent, a, b)
         result += cost
         last = cost
+
 print(result-cost)
+# 가장 간단한 방법은 클루스칼 알고리즘으로 최소 신장 트리를 찾은 뒤에 최소 신장 트리를 구성하는 간선 중에서
+# 가장 비용이 큰 간선을 제거하는 것이다. 그러면 최소 신장 트리가 2개의 부분 그래프로 나누어지며, 문제에서 요구하는 최적의 해를 만족한다.
