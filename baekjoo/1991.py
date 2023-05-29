@@ -58,3 +58,14 @@ print()
 inorder(tree['A'])
 print()
 postorder(tree['A'])
+
+
+import sys
+
+N = int(sys.stdin.readline().strip())
+tree = {}
+
+for i in range(N):
+  root, left, right = sys.stdin.readline.strip()
+  tree[root] = [left, right]
+
